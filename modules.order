@@ -1,0 +1,2 @@
+kernel/drivers/mydriver/bcd_encode.ko
+kernel/drivers/mydriver/bcd_decode.ko

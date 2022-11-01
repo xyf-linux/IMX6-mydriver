@@ -1,0 +1,1 @@
+cmd_drivers/mydriver/bcd_imx6ull.ko := /opt/imx6ul/gcc-linaro-arm-linux-gnueabihf-4.7-2012.12-20121214_linux/bin/arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/mydriver/bcd_imx6ull.ko drivers/mydriver/bcd_imx6ull.o drivers/mydriver/bcd_imx6ull.mod.o

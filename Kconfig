@@ -1,0 +1,47 @@
+#
+# Misc strange devices
+#
+
+menu "My(XYF) devices"
+
+
+config MyBuzzer_TEST
+        tristate "MyBuzzer support"
+        default y
+        help
+          This option enables device driver support for the buzzer
+          used by user on imx6ul kit.
+          If you need to use buzzer  on your board, say Y or M here.
+          If you're not sure, say N.
+
+config MyTlv320aic3x_TEST
+        tristate "MyTlv320aic3x support"
+        depends on OF && I2C
+        select SND_SOC_TLV320AIC3X
+        select SND_COS_IMX_PCM_DMA
+        select SND_SOC_FSL_SAI
+        select SND_SOC_FSL_UTILS
+        select SND_KCTL_JACK
+        help
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+config BCD_encodeSupport
+        tristate "BCD ENCODE Support"
+        default y
+        help
+          The driver is working for output B_waveform.
+
+config BCD_decodeSupport
+        tristate "BCD DECODE Support"
+        default y
+        help
+          The driver is working for output B_waveform.
+
+
+
+
+
+endmenu
+

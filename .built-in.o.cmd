@@ -1,0 +1,1 @@
+cmd_drivers/mydriver/built-in.o :=  rm -f drivers/mydriver/built-in.o; /opt/imx6ul/gcc-linaro-arm-linux-gnueabihf-4.7-2012.12-20121214_linux/bin/arm-linux-gnueabihf-ar rcsD drivers/mydriver/built-in.o
